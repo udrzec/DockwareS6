@@ -31,7 +31,16 @@
                                 {% set activePath = page.header.navigation.active.path %}
                             {% endif %}
 
+
+                            {#{% set count = 0 %}#}
+
+
                             {% for treeItem in page.header.navigation.tree %}
+
+
+                                {#{% set count = count + 1 %}#}
+
+
                                 {% set category = treeItem.category %}
                                 {% set name = category.translated.name %}
 
@@ -50,6 +59,11 @@
                                             </div>
                                         </div>
                                     {% else %}
+
+
+                                        {#{% if count == 1 %}{{ dump(name) }} {% endif %}#}
+
+
                                         <a class="nav-link main-navigation-link{% if category.id == page.header.navigation.active.id or category.id in activePath %} active{% endif %}"
                                            href="{{ category_url(category) }}"
                                            itemprop="url"
