@@ -32,13 +32,13 @@
                             {% endif %}
 
 
-                            {#{% set count = 0 %}#}
+                            {##}{% set count = 0 %}
 
 
                             {% for treeItem in page.header.navigation.tree %}
 
 
-                                {#{% set count = count + 1 %}#}
+                                {##}{% set count = count + 1 %}
 
 
                                 {% set category = treeItem.category %}
@@ -61,7 +61,7 @@
                                     {% else %}
 
 
-                                        {#{% if count == 1 %}{{ dump(name) }} {% endif %}#}
+                                        {#{% if count == 1 %}{{ dump(category_url(category)) }} {% endif %}#}
 
 
                                         <a class="nav-link main-navigation-link{% if category.id == page.header.navigation.active.id or category.id in activePath %} active{% endif %}"
