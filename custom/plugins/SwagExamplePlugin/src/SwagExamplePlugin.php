@@ -4,6 +4,10 @@ namespace SwagExamplePlugin;
 
 use Shopware\Core\Framework\Plugin;
 
+
+
 class SwagExamplePlugin extends Plugin
 {
+
+
 }
