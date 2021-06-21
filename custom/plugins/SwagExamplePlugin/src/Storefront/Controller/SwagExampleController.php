@@ -18,7 +18,7 @@ class SwagExampleController extends StorefrontController
     /**
     * @Route("/example", name="frontend.example.example", methods={"GET"})
     */
-    public function showExample(Request $request, Context $context): Response
+    public function showSwagExample(): Response
     {
         return $this->renderStorefront('@SwagExamplePlugin/storefront/page/example.html.twig', [
             'example' => 'Hello world'
